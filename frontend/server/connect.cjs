@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || "602865785206-4gnqb13uqllm5242cf8qoasd5nf8g30j.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID = "Your_Mongodb_Client_ID";
 const googleClient = new OAuth2Client(GOOGLE_CLIENT_ID);
 
 app.post("/social-login", async (req, res) => {
@@ -115,7 +115,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-const MONGO_URI = "mongodb+srv://c84289798:rajputaman123@cluster0.60t2q.mongodb.net/data?retryWrites=true&w=majority";
+const MONGO_URI = "Your_Mongodb_URI";
 
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
