@@ -1,0 +1,129 @@
+.custom-btn-size {
+    padding: 0.5rem 1rem; /* Adjust these values as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+}
+  
+/* Password input group styling */
+.input-group.password {
+    position: relative;
+  }
+
+  /* Add this to your signup.css file */
+.password-input-group {
+    border-radius: 0.375rem !important; /* Bootstrap's default radius */
+    overflow: hidden; /* This ensures child elements respect the border radius */
+  }
+  
+  .password-input-group .form-control {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  
+  .password-input-group .input-group-text {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-left: none !important;
+  }
+  .input-group.password .form-control {
+    padding-right: 40px;
+  }
+  
+  .input-group.password .input-group-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    width: 50px;
+  }
+  
+  /* Confirm password input group styling */
+  .input-group:not(.password) {
+    position: relative;
+  }
+  
+  .input-group:not(.password) .form-control {
+    padding-right: 40px;
+  }
+  
+  .input-group:not(.password) .input-group-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 8px;
+    bottom: 0;
+    z-index: 5;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+  }
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.google-login-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Customize the Google button */
+div[id^="google-login-div"] {
+  width: 100% !important;
+}
+
+div[id^="google-login-div"] button {
+  width: 100% !important;
+  justify-content: center !important;
+  border-radius: 8px !important;
+  height: 48px !important;
+  font-size: 16px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem;
+  }
+  
+  .login-title {
+    font-size: 1.5rem;
+  }
+}

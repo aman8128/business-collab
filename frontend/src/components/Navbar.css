@@ -1,0 +1,36 @@
+.title{
+    text-align: center;
+    margin: 1px;
+    justify-content: center;
+    padding-top: 4px;
+    padding: 1px 5px;
+}
+
+.logo{
+    height: 50px;
+    width: auto;
+    padding-left: 9px;
+}
+/* Navbar.css */
+.user-dropdown .dropdown-menu {
+    right: 0;
+    left: auto;
+    min-width: 160px;
+}
+
+.dropdown-item:checked{
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+}
+  
+.home{
+    background-color: blue;
+    color: white;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
